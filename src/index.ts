@@ -44,3 +44,18 @@ return age? `hello,${name},you are${age} years old`
  processInput("koech",(message)=>{
     console.log(message);
  });
+ //async functions, used when working with asynchronous operations
+ async function fetchData(): Promise<string>{
+    return "data fetched successfully";
+ }
+  fetchData().then(data =>console.log(data));
+
+  //function overloading,allows multiple function signatures
+  function combine(a:string,b:string):string;
+  function combine(a:number,b:number):number;
+      function combine(a:any,b:any):any{
+        return a+b;
+
+      }
+      console.log(combine(5,20)) 
+      console.log(combine("hello ", "Typescript"));

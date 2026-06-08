@@ -4,9 +4,10 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
-    "module": "nodenext",
+    "module":"es2022",
     "target": "esnext",
     "types": [],
+    
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
